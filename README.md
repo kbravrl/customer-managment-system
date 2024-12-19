@@ -1,4 +1,4 @@
-# customer-managment-system
+# müşteri-yönetim-sistemi
 
 Bu proje, ASP.NET Core Razor Pages ve MySQL kullanılarak oluşturulmuş basit bir Müşteri Yönetim Sistemidir. Kullanıcıların müşteri kayıtlarını oluşturmasına, okumasına, güncellemesine ve silmesine olanak tanır.
 
@@ -32,3 +32,36 @@ Bu proje, ASP.NET Core Razor Pages ve MySQL kullanılarak oluşturulmuş basit b
   );
 
 https://github.com/user-attachments/assets/bfd9cdee-9366-451f-8973-f9c96cd028ec
+
+# customer-management-system
+
+This project is a simple Customer Management System built using ASP.NET Core Razor Pages and MySQL. It allows users to create, read, update and delete customer records.
+
+## Features
+- **List Customers**: Display all customers in a tabular format.
+- **Create Customer**: Add new customer details.
+- **Edit Customer**: Update existing customer details.
+- **Delete Customer**: Remove a customer record.
+
+## Technologies Used
+- ASP.NET Core
+- Razor Pages
+- MySQL
+
+## Prerequisites
+- .NET SDK
+- MySQLServer
+- MySQL Workbench
+
+## Database
+- CREATE TABLE customers (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ firstname VARCHAR(100) NOT NULL,
+ lastname VARCHAR(100) NOT NULL,
+ email VARCHAR(100) NOT NULL,
+ phone VARCHAR(20),
+ address VARCHAR(255),
+ company VARCHAR(100),
+ notes TEXT,
+ createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ );
